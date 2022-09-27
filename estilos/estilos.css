@@ -1,0 +1,79 @@
+head,body{
+    background-color: #5b9aa0;
+    height: 2000px;
+    width: 1000px;
+}
+
+h1{
+    color: aliceblue;
+    text-align: center;
+}
+
+.cajaCalculadora{
+    width: 180px;
+    height: 40px;
+    margin-left: 6px;
+    margin-right: auto; 
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    text-align: end;
+    border-style: revert;
+    border-color: rgb(255, 255, 255);
+    border-radius: 12px;
+    
+}
+.caja2{
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    border-color: rgb(108, 108, 108);
+    background-color:  #d6d4e0;
+    border-radius: 12px;
+    box-shadow: 2px 4px rgb(121, 121, 121);
+}
+
+.btn_1,.btn_2,.btn_3,.btn_4,.btn_5,.btn_6,.btn_7,.btn_8,.btn_9,.btn_0,.btn_mas,.btn_menos,.btn_multiplicacion,.btn_eliminar,.btn_div,.btn_igual{
+    
+    box-shadow: 2px -1px rgb(121, 121, 121);
+    border-radius: 8px;
+    padding: 10px;
+    margin: 5px;
+    margin-left: 9px;
+    display: inline-block;
+    justify-content: center;
+    align-content: center;
+    color: rgb(9, 1, 62);
+    background-color: #b8a9c9;
+    transition: 0.6s;
+    
+}
+.btn_mas,.btn_menos,.btn_multiplicacion,.btn_div{
+    background-color:  #622569;
+    width: 30px;
+}
+.btn_eliminar,.btn_igual{
+    background-color: #667292;
+}
+
+.btn_1:hover,.btn_2:hover,.btn_3:hover,.btn_mas:hover,.btn_4:hover,.btn_5:hover,.btn_6:hover,.btn_menos:hover,.btn_7:hover,.btn_8:hover,.btn_9:hover,.btn_multiplicacion:hover,.btn_eliminar:hover,.btn_div:hover,.btn_0:hover,.btn_igual:hover{
+    color: azure;
+    background-color: rgb(37, 37, 37);
+    cursor: pointer;
+}
+
+/*Responsive*/
+@media screen and (max-width:700px) {
+    head,body {
+        float:none;
+        width:80%;
+        font-size:1.2em;
+      }
+    h1{
+       box-sizing: border-box;
+       padding: 20px;
+    }
+      
+}

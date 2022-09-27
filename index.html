@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="estilos/estilos.css" rel ="stylesheet"  type="text/css">  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>MI CALCULADORA</h1>
+        
+            <form class="caja2" name="caja2">
+                <input class="cajaCalculadora" type="textfield" name="cajaNumeros"value="" autocomplete="off" readonly>
+                    <input type="button" onclick="document.caja2.cajaNumeros.value+='1'" 
+                    class="btn_1" value="1"/>
+                    <input type="button" onclick="document.caja2.cajaNumeros.value+='2'" 
+                    class="btn_2" value="2"/>
+                    <input type="button" onclick="document.caja2.cajaNumeros.value+='3'" 
+                    class="btn_3" value="3"/>
+                    <input type="button" onclick="document.caja2.cajaNumeros.value+='+'" 
+                    class="btn_mas" value="+"/>
+                            
+                    <input type="button" onclick="document.caja2.cajaNumeros.value+='4'" 
+                    class="btn_4" value="4"/>
+                    <input type="button" onclick="document.caja2.cajaNumeros.value+='5'" 
+                    class="btn_5" value="5"/>
+                    <input type="button" onclick="document.caja2.cajaNumeros.value+='6'" 
+                    class="btn_6" value="6"/>
+                    <input type="button" onclick="document.caja2.cajaNumeros.value+='-'" 
+                    class="btn_menos" value="-"/>
+
+                    <input type="button" onclick="document.caja2.cajaNumeros.value+='7'" 
+                    class="btn_7" value="7"/>
+                    <input type="button" onclick="document.caja2.cajaNumeros.value+='8'" 
+                    class="btn_8" value="8"/>
+                    <input type="button" onclick="document.caja2.cajaNumeros.value+='9'" 
+                    class="btn_9" value="9"/>
+                    <input type="button" onclick="document.caja2.cajaNumeros.value+='*'" 
+                    class="btn_multiplicacion" value="*"/>
+
+                    <input type="reset"class="btn_eliminar" value="c"/>
+                    <input type="button" onclick="document.caja2.cajaNumeros.value+='0'" 
+                    class="btn_0" value="0"/>
+                    <input type="button" onclick="document.caja2.cajaNumeros.value=eval(document.caja2.cajaNumeros.value)" 
+                    class="btn_igual" value="="/>
+                    <input type="button" onclick="document.caja2.cajaNumeros.value+='/'" 
+                    class="btn_div" value="/"/>
+                
+            </form>            
+    </div>
+</body>
+</html>
